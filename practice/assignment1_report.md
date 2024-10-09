@@ -9,12 +9,12 @@
 - steps to create the neural networks
 1. create inputs for each unique words
 2. connect each word to at least 1 (how many numbers we want to associate with each word) **activation function** (uses the identity function)
-  - the **weights** on those connections will ultimately be the number that we associate with each word
-  - the weights will start off randomly, and will be optimized using **backpropagation** (we have to make predictions by using the input words to predict the next word in the phrase)
-  - connect the **activation functions** to outputs
-    - add **weights** to those connections with random initilization values
-    - run the outputs through the **SoftMax** function
-    - use **Cross Entropy loss function** for **backpropagation**
+    - the **weights** on those connections will ultimately be the number that we associate with each word
+    - the weights will start off randomly, and will be optimized using **backpropagation** (we have to make predictions by using the input words to predict the next word in the phrase)
+    - connect the **activation functions** to outputs
+      - add **weights** to those connections with random initilization values
+      - run the outputs through the **SoftMax** function
+      - use **Cross Entropy loss function** for **backpropagation**
 3. the new **weights** on the connections from the inputs to the **activation functions** are the **word embeddings**
 
 ### Word2Vec 
@@ -35,10 +35,10 @@
 3. visualize the word embeddings using t-SNE
 
 ### Linkies 
-- I first learned about WordEmbeddings [here](https://www.youtube.com/watch?v=viZrOnJclY0), but to understand that video you need to have a basic understanding of neural network, gradien descent, and backpropagation first, which I high recommend [this website ](https://www.3blue1brown.com/topics/neural-networks)
+- I first learned about WordEmbeddings [here](https://www.youtube.com/watch?v=viZrOnJclY0), but to understand that video you need to have a basic understanding of neural network, gradien descent, and backpropagation first, which I high recommend [this website](https://www.3blue1brown.com/topics/neural-networks)
 - A reference, highly inefficient implementation is [here](https://colab.research.google.com/drive/1hBg2sCULriPmsCuht5oBhwLvk8ADjoxP?usp=sharing)
 - [dataset](https://huggingface.co/datasets/Salesforce/wikitext/tree/main)
 
 ### Todos
 - [ ] dive deeper into **Continuous Bag of Words**, **Skip Gram**, and **negative sampling**
-- [ ] find out how the big models are doing it?
+- [ ] find out how the big models are doing it (there own methods? how many parameters are they using? what model are they using?)
